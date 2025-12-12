@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnny Chen | AI 轉型顧問</title>
+    <title>Johnny Chen | 台灣頂尖 AI 轉型顧問, LLM 應用與工作流自動化專家</title>
+    
+    <!-- SEO 關鍵元素 (Keywords, Description, Author) -->
+    <meta name="description" content="Johnny Chen 專注於企業 AI 轉型，提供 LLM (大型語言模型) 應用、提示詞工程和工作流自動化 (RPA) 解決方案，助您實現高效率與 ROI 增長。">
+    <meta name="keywords" content="AI顧問, LLM, 人工智慧, 提示詞工程, Prompt Engineering, 工作流自動化, RPA, 企業轉型, Azure AI">
+    <meta name="author" content="Johnny Chen">
+
     <!-- 引入 Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 Font Awesome for Social Icons -->
@@ -11,7 +17,7 @@
     
     <!-- 配置 Inter 字體與專業科技樣式 -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700;display=swap');
         
         /* 定義專業主題色 */
         :root {
@@ -43,14 +49,6 @@
             box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.6), 0 0 15px rgba(6, 182, 212, 0.5);
         }
         
-        /* 程式碼區塊樣式 (保持簡潔，用於聯絡區塊) */
-        .code-block-window {
-            background-color: #1e293b; /* Slate-800 */
-            border: 1px solid #334155; /* Slate-700 */
-            font-family: 'Inter', sans-serif; /* Use Inter for better readability in form */
-            overflow: hidden;
-        }
-
         /* 打字機效果 CSS */
         .typewriter-cursor {
             border-right: 2px solid var(--color-accent);
@@ -65,7 +63,7 @@
 </head>
 <body class="bg-slate-900 text-slate-100 antialiased">
 
-    <!-- 導覽列 (Navigation Bar) -->
+    <!-- 導覽列 (Navigation Bar) - 響應式粘性導航 -->
     <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-sm shadow-md border-b border-slate-700/50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="#home" class="text-2xl font-bold pro-gradient-text tracking-wider">J.C. | AI</a>
@@ -93,9 +91,9 @@
 
     <main>
         <!-- 1. 首頁 (Home) - Hero Section -->
+        <!-- H1 標籤：首頁最重要的標題，用於 SEO -->
         <section id="home" class="py-24 md:py-40 text-center bg-slate-900 relative overflow-hidden flex items-center min-h-[70vh]">
             <div class="container mx-auto px-4 relative z-10">
-                <!-- B1: 主要價值主張與標語 (Typewriter Effect) -->
                 <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 tracking-tight">
                     <span id="typewriter-text" class="typewriter-cursor"></span>
                     <br class="hidden sm:inline">
@@ -103,7 +101,6 @@
                 <p class="text-xl sm:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto font-medium">
                     專注於 **LLM 應用落地**、**工作流自動化**，以科技力量驅動企業的高效成長。
                 </p>
-                <!-- B5: 行動呼籲 - 標準按鈕樣式 -->
                 <div class="space-y-4 sm:space-y-0 sm:space-x-6">
                     <a href="https://calendly.com/alex-ai-consulting" target="_blank" class="inline-block px-8 py-3 text-lg font-semibold bg-cyan-600 text-white rounded-full shadow-lg hover:bg-cyan-500 transition duration-300 transform hover:scale-105">
                         預約 AI 諮詢 (Schedule a Call)
@@ -115,17 +112,18 @@
         <!-- 2. 關於我 (About Me) -->
         <section id="about" class="py-16 md:py-24 bg-slate-800 border-t border-b border-slate-700">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- H2 標籤：Section Title -->
                 <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-cyan-400">
-                    ABOUT ME
+                    關於我：AI 轉型與技術實踐家
                 </h2>
                 <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
-                    <!-- C1: 專業簡介與經歷故事 (佔用兩欄) -->
                     <div class="lg:col-span-2">
                         
-                        <!-- 圖片：僅在行動裝置上置中顯示 (與右側欄的圖片交替顯示) -->
+                        <!-- 圖片 1/2：行動裝置顯示 -->
                         <div class="mb-8 block lg:hidden text-center">
+                            <!-- !!! 這是第一處：請將此處的 src="..." 替換為您的 FB_IMG_1648801817304.jpg 檔案的公開連結 !!! -->
                             <img src="https://placehold.co/192x192/1e293b/06b6d4?text=J.C.+AI+Consultant" 
-                                 alt="Johnny Chen Profile Picture (rolex.jpg)" 
+                                 alt="Johnny Chen 專業頭像照片 (AI 顧問)" 
                                  class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-cyan-500 shadow-xl"
                                  onerror="this.onerror=null; this.src='https://placehold.co/192x192/1e293b/06b6d4?text=J.C.'"
                             >
@@ -140,24 +138,25 @@
                         <p class="text-lg text-slate-300 mb-6 font-semibold border-l-4 border-cyan-500 pl-4">
                             我的使命：致力於提供具備前瞻性、解決問題魄力的諮詢服務，共同擘劃 AI 驅動的未來藍圖。
                         </p>
-                        <!-- C4: 客戶證言 (Placeholder) -->
                         <div class="mt-8 p-6 bg-slate-900 border-l-4 border-cyan-500 rounded-lg shadow-pro">
                             <p class="italic text-slate-400">"與 Johnny Chen 合作，我們的提示詞成本降低了 30%，且模型輸出準確率提升了 20%。這證明了技術與商業策略的完美整合。"</p>
                             <p class="mt-2 text-sm font-medium text-cyan-400">- 某科技新創 CEO</p>
                         </div>
                     </div>
-                    <!-- C2: 核心技能樹 (佔用一欄) -->
+                    <!-- 核心技能樹 (側邊欄) -->
                     <div class="lg:col-span-1 p-6 bg-slate-900 rounded-xl shadow-pro border border-slate-700">
                         
-                        <!-- 圖片：僅在桌面版上置中顯示 (模擬側邊欄的 Profile Photo) -->
+                        <!-- 圖片 2/2：桌面版顯示 -->
                         <div class="mb-6 hidden lg:block text-center">
+                            <!-- !!! 這是第二處：請將此處的 src="..." 替換為您的 FB_IMG_1648801817304.jpg 檔案的公開連結 !!! -->
                             <img src="https://placehold.co/192x192/1e293b/06b6d4?text=J.C.+AI+Consultant" 
-                                 alt="Johnny Chen Profile Picture (rolex.jpg)" 
+                                 alt="Johnny Chen 專業頭像照片 (AI 顧問)" 
                                  class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-cyan-500 shadow-xl"
                                  onerror="this.onerror=null; this.src='https://placehold.co/128x128/1e293b/06b6d4?text=J.C.'"
                             >
                         </div>
 
+                        <!-- H3 標籤：Section 副標題 -->
                         <h3 class="text-xl font-semibold mb-4 text-cyan-400">核心能力 (Core Capabilities)</h3>
                         <ul class="space-y-3 text-slate-300 text-base">
                             <li class="flex items-center"><i class="fa-solid fa-code mr-2 text-cyan-400"></i>提示詞工程 (Prompt Engineering)</li>
@@ -174,27 +173,25 @@
         <!-- 3. AI 解決方案服務 (Services) -->
         <section id="services" class="py-16 md:py-24 bg-slate-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- H2 標籤：Section Title -->
                 <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-cyan-400">
-                    AI SOLUTIONS FOR ROI
+                    專注 ROI 的 AI 解決方案
                 </h2>
-                <!-- 服務介紹文字 (強調 ROI) -->
+                <!-- 服務介紹文字 (增強響應式排版) -->
                 <div class="max-w-4xl mx-auto mb-16 p-6 border-l-4 border-cyan-500 bg-slate-800 rounded-lg shadow-pro">
-                    <h3 class="text-2xl font-bold text-cyan-400 mb-4">AI 賦能：驅動效率與 ROI 爆炸性增長</h3>
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-4">AI 賦能：驅動效率與投資回報 (ROI) 爆炸性增長</h3>
                     <p class="text-lg text-slate-300 mb-4">
                         我的 AI 服務不再是未來的空想，而是今日的商業武器。
                     </p>
-                    <p class="text-lg text-slate-300 mb-4">
-                        憑藉兩年的 LLM 實戰經驗與 Azure AI 認證，我專注於將複雜的 AI 技術轉化為可量化的**投資回報 (ROI)**。核心服務涵蓋從 **客製化 Chatbot** 開發到 **工作流程自動化 (RPA)** 的全面部署，確保您的團隊能立即擺脫重複性工作，專注於戰略性任務。
-                    </p>
                     <p class="text-lg text-slate-300 font-semibold">
-                        我們的解決方案旨在打破數據孤島，實現從數據洞察到市場執行的無縫銜接。我們承諾為您的業務帶來實質性的成本節省與生產力飛躍。
+                        我們承諾為您的業務帶來實質性的成本節省與生產力飛躍。
                     </p>
                 </div>
 
-                <!-- 服務卡片 Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 服務卡片 Grid (響應式：1欄 > 2欄 > 3欄) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <!-- D1: 客製化 Chatbot & 知識庫 -->
+                    <!-- H3 標籤：Service Item Title -->
                     <div class="bg-slate-800 p-6 rounded-xl shadow-pro border border-slate-700">
                         <div class="text-3xl text-cyan-400 mb-4"><i class="fa-solid fa-robot"></i></div>
                         <h3 class="text-xl font-semibold mb-3">客製化 Chatbot 與知識庫</h3>
@@ -204,7 +201,6 @@
                         <a href="#contact" class="text-cyan-400 text-sm font-medium hover:text-cyan-300">了解詳情 &rarr;</a>
                     </div>
 
-                    <!-- D2: 工作流自動化 (RPA) -->
                     <div class="bg-slate-800 p-6 rounded-xl shadow-pro border border-slate-700">
                         <div class="text-3xl text-cyan-400 mb-4"><i class="fa-solid fa-chart-gantt"></i></div>
                         <h3 class="text-xl font-semibold mb-3">工作流程自動化 (RPA)</h3>
@@ -214,7 +210,6 @@
                         <a href="#contact" class="text-cyan-400 text-sm font-medium hover:text-cyan-300">了解詳情 &rarr;</a>
                     </div>
 
-                    <!-- D3: 企業 AI 培訓與團隊建置 -->
                     <div class="bg-slate-800 p-6 rounded-xl shadow-pro border border-slate-700">
                         <div class="text-3xl text-cyan-400 mb-4"><i class="fa-solid fa-users-gear"></i></div>
                         <h3 class="text-xl font-semibold mb-3">AI 教育訓練與團隊建置</h3>
@@ -230,15 +225,17 @@
         <!-- 4. 作品集/案例展示 (Portfolio) -->
         <section id="portfolio" class="py-16 md:py-24 bg-slate-800 border-t border-b border-slate-700">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- H2 標籤：Section Title -->
                 <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-cyan-400">
-                    SUCCESS STORIES
+                    SUCCESS STORIES (成功案例)
                 </h2>
-                <!-- 案例 Grid -->
+                <!-- 案例 Grid (響應式：1欄 > 2欄) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
                     <!-- 案例 1 -->
-                    <div class="bg-slate-900 p-6 rounded-xl shadow-pro border border-slate-700">
+                    <article class="bg-slate-900 p-6 rounded-xl shadow-pro border border-slate-700">
                         <span class="inline-block text-sm font-medium text-green-400 mb-2 border border-green-400 rounded-full px-3 py-1">AI TRANSFORMATION</span>
+                        <!-- H3 標籤：Case Study Title -->
                         <h3 class="text-2xl font-bold mb-3 text-slate-100">製造業智慧品管系統</h3>
                         <p class="text-slate-400 mb-4 font-mono text-sm">
                             <span class="text-red-400">// CHALLENGE:</span> 傳統品檢錯誤率高達 5%，且耗時。<br>
@@ -246,10 +243,10 @@
                             <span class="text-cyan-400">// ROI:</span> 準確率提升至 99.8%，人力成本減少 40%。
                         </p>
                         <a href="#" class="text-sm font-medium text-cyan-400 hover:text-cyan-300">View Full Case Study &rarr;</a>
-                    </div>
+                    </article>
 
                     <!-- 案例 2 -->
-                    <div class="bg-slate-900 p-6 rounded-xl shadow-pro border border-slate-700">
+                    <article class="bg-slate-900 p-6 rounded-xl shadow-pro border border-slate-700">
                         <span class="inline-block text-sm font-medium text-green-400 mb-2 border border-green-400 rounded-full px-3 py-1">LLM OPTIMIZATION</span>
                         <h3 class="text-2xl font-bold mb-3 text-slate-100">金融業 RAG 系統提示詞優化</h3>
                         <p class="text-slate-400 mb-4 font-mono text-sm">
@@ -258,13 +255,13 @@
                             <span class="text-cyan-400">// ROI:</span> 資訊檢索準確率提高 15%，客戶服務滿意度顯著提升。
                         </p>
                         <a href="#" class="text-sm font-medium text-cyan-400 hover:text-cyan-300">View Full Case Study &rarr;</a>
-                    </div>
+                    </article>
                 </div>
 
                 <!-- 案例列表連結 -->
                 <div class="text-center mt-12">
                     <a href="#" class="inline-flex items-center text-lg font-semibold text-slate-200 hover:text-cyan-400 transition duration-300">
-                        Browse All Case Studies 
+                        瀏覽所有案例 
                         <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -274,14 +271,16 @@
         <!-- 5. 技術資源與開源貢獻 (Resources) -->
         <section id="resources" class="py-16 md:py-24 bg-slate-900 border-t border-slate-700">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- H2 標籤：Section Title -->
                 <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-cyan-400">
-                    OPEN SOURCE & RESOURCES
+                    技術資源與開源貢獻
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> <!-- Adjusted grid to 4 columns for desktop -->
+                <!-- 專案 Grid (響應式：1欄 > 2欄 > 4欄) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                    <!-- 專案 1 (Meeting Summarizer) -->
                     <article class="bg-slate-800 rounded-xl overflow-hidden shadow-pro border border-slate-700">
                         <div class="p-6">
+                            <!-- H3 標籤：Project Title -->
                             <span class="text-sm font-medium text-green-400">AI Script</span>
                             <h3 class="text-xl font-bold mt-2 mb-3 text-slate-100">自動化會議記錄摘要機器人</h3>
                             <p class="text-slate-400 text-sm mb-4">
@@ -294,7 +293,6 @@
                         </div>
                     </article>
 
-                    <!-- 專案 2 (Enterprise RAG Demo) -->
                     <article class="bg-slate-800 rounded-xl overflow-hidden shadow-pro border border-slate-700">
                         <div class="p-6">
                             <span class="text-sm font-medium text-green-400">LLM Demo</span>
@@ -309,7 +307,6 @@
                         </div>
                     </article>
 
-                    <!-- 專案 3 (Midjourney Prompt Generator) -->
                     <article class="bg-slate-800 rounded-xl overflow-hidden shadow-pro border border-slate-700">
                         <div class="p-6">
                             <span class="text-sm font-medium text-green-400">AI Tool</span>
@@ -324,7 +321,6 @@
                         </div>
                     </article>
                     
-                    <!-- 專案 4 (Line 烘焙機器人) - 連結已修正 -->
                     <article class="bg-slate-800 rounded-xl overflow-hidden shadow-pro border border-slate-700">
                         <div class="p-6">
                             <span class="text-sm font-medium text-green-400">Line Bot</span>
@@ -345,8 +341,9 @@
         <!-- 6. 聯絡我 (Contact) - 簡潔表單樣式 -->
         <section id="contact" class="py-16 md:py-24 bg-slate-800 border-t border-slate-700">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+                <!-- H2 標籤：Section Title -->
                 <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-cyan-400">
-                    INITIATE CONSULTATION
+                    立即啟動諮詢 (Initiate Consultation)
                 </h2>
                 
                 <div class="bg-slate-900 p-6 sm:p-8 rounded-xl shadow-pro border border-slate-700">
@@ -372,7 +369,6 @@
                         </div>
                         
                         <div class="pt-4">
-                            <!-- 標準 Call to Action Button -->
                             <button type="submit" class="w-full block text-center px-6 py-3 text-lg font-semibold bg-cyan-600 text-white rounded-lg hover:bg-cyan-500 transition duration-300 shadow-lg transform hover:scale-[1.01]">
                                 送出諮詢表單
                             </button>
@@ -384,15 +380,15 @@
                         <div class="text-slate-400 text-center mb-3">或透過以下方式聯繫我</div>
                         <div class="flex space-x-6 justify-center">
                             <!-- LinkedIn -->
-                            <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300" title="LinkedIn">
+                            <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300" title="LinkedIn 領英">
                                 <i class="fa-brands fa-linkedin text-2xl"></i>
                             </a>
                             <!-- GitHub -->
-                            <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300" title="GitHub">
+                            <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300" title="GitHub 開源專案">
                                 <i class="fa-brands fa-github text-2xl"></i>
                             </a>
                             <!-- X/Twitter -->
-                            <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300" title="X/Twitter">
+                            <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300" title="X/Twitter 推特">
                                 <i class="fa-brands fa-x-twitter text-2xl"></i>
                             </a>
                         </div>
@@ -405,7 +401,7 @@
     <!-- 頁腳 (Footer) -->
     <footer class="bg-slate-900 border-t border-slate-700 py-8">
         <div class="container mx-auto px-4 text-center text-slate-500 text-sm font-mono">
-            <p>&copy; 2025 J.C. AI Consulting | Protocol Version 2.0.0 | Built with <span class="text-cyan-400">Clean Code</span></p>
+            <p>&copy; 2025 J.C. AI Consulting | All Rights Reserved. | Designed for optimal responsiveness.</p>
         </div>
     </footer>
 
